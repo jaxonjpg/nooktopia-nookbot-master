@@ -1,2 +1,3 @@
-# nooktopia-nookbot-master
-Using the Official NookBot to help Nooktopia for their project.
+# Nookbot
+Discord.js bot for the Animal Crossing: New Horizons Discord server,
+[discord.gg/acnh](https://discord.gg/acnh)!
