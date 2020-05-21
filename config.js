@@ -1,22 +1,22 @@
 /* eslint-disable max-len */
 const config = {
-  token: 'insert-token-here',
+  token: 'NzEyODY4NzU5NzY4OTI0MTYw.XsX2LQ.SRs25lsqSyD2kB7kd_6L68AS8zU',
 
   // Settings
   defaultSettings: {
-    prefix: '.',
-    verifiedRole: 'Island Staff',
-    modRole: 'Island Moderators',
-    adminRole: 'Island Administrators',
-    staffChat: '711237845859434589',
-    actionLog: '711237845859434592',
-    modLog: '711237845859434594',
-    musicText: '711237846026944521',
-    music: '711237845859434595',
+    prefix: '/',
+    verifiedRole: 'Resident Representatives',
+    modRole: 'Redd (MOD)',
+    adminRole: 'Nooklings (ADMIN)',
+    staffChat: '711067094157885461',
+    actionLog: '707084468720238633',
+    modLog: '710307401089417217',
+    musicText: '708831983232483412',
+    music: '704054308890738799',
   },
 
   // Bot Perms and Stuff
-  ownerID: '292467662020411392',
+  ownerID: '291252375727898625',
 
   // Guild Perms and Stuff
   permLevels: [
@@ -27,7 +27,7 @@ const config = {
     },
     {
       level: 1,
-      name: 'Island Staff',
+      name: 'Island Resident',
       check: (client, message) => {
         if (message.guild) {
           const verifiedRole = message.guild.roles.cache.find((r) => r.name.toLowerCase() === client.getSettings(message.guild).verifiedRole.toLowerCase());
@@ -41,7 +41,7 @@ const config = {
     },
     {
       level: 2,
-      name: 'Island Moderators',
+      name: 'Redd (MOD)',
       check: (client, message) => {
         if (message.guild) {
           const modRole = message.guild.roles.cache.find((r) => r.name.toLowerCase() === client.getSettings(message.guild).modRole.toLowerCase());
@@ -55,7 +55,7 @@ const config = {
     },
     {
       level: 3,
-      name: 'Island Administrators',
+      name: 'Nooklings (ADMIN)',
       check: (client, message) => {
         if (message.guild) {
           const adminRole = message.guild.roles.cache.find((r) => r.name.toLowerCase() === client.getSettings(message.guild).adminRole.toLowerCase());
@@ -69,7 +69,7 @@ const config = {
     },
     {
       level: 4,
-      name: 'Owner',
+      name: 'Tom Nook (OWNER)',
       check: (client, message) => {
         if (message.guild && message.author.id === message.guild.ownerID) {
           return true;
